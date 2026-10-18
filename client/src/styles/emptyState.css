@@ -1,0 +1,20 @@
+.empty-state {
+    margin: 10px 5px;
+    padding: 24px 16px;
+    text-align: center;
+    background-color: var(--surface-muted);
+    border: 1px solid var(--border-strong);
+    border-radius: 10px;
+    color: var(--text);
+}
+
+.empty-state p {
+    margin: 0 0 4px;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.empty-state span {
+    color: var(--text-muted);
+    font-size: 14px;
+}

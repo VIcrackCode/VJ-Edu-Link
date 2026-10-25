@@ -1,0 +1,36 @@
+.announcements-box{
+    min-height: 100%;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid rgb(26, 167, 255);
+    border-radius: 10px;
+}
+.announcement-card{
+    background-color: whitesmoke;
+    border: 1px solid rgb(165, 233, 255);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.announcement-card p{
+    display: flex;
+    flex-direction: column;
+    text-overflow: break-word;
+}
+
+.announcements-box {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--surface);
+    border-color: var(--border);
+    border-radius: 8px;
+}
+
+.announcement-card {
+    margin: 12px 0 0;
+    padding: 16px;
+    border-color: var(--border-strong);
+}
+
+.announcement-card h3 { margin: 0 0 10px; color: var(--text); }
+.announcement-card p { margin: 8px 0 0; color: var(--text-muted); overflow-wrap: anywhere; }

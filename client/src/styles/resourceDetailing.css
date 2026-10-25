@@ -1,0 +1,67 @@
+.resource-full-box, .lab-resource-full-box{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(88, 177, 255);
+    border-radius: 10px;
+}
+.resource-box,
+.lab-resource-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+}
+.resource-container, .lab-resource-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    border: none;
+    box-shadow: 0px 0px 2px 2px rgb(98, 98, 98) ;
+    border-radius: 10px;
+    background-color: white;
+    padding: 25px;
+}
+
+.resource-box a,
+.lab-resource-box a {
+    display: inline-block;
+    padding: 10px 16px;
+    margin: 5px;
+
+    background-color: #558afc;
+    color: white;
+
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+.resource-box a:hover,
+.lab-resource-box a:hover {
+    background-color: #7090e8;
+    transform: translateY(-2px);
+}
+
+.resources-box { width: 100%; }
+.resource-full-box, .lab-resource-full-box { padding: 16px; margin-bottom: 14px; border-color: var(--border); background-color: var(--surface); }
+.resource-full-box h2, .lab-resource-full-box h2 { margin: 0 0 14px; color: var(--text); font-size: 1.25rem; }
+.resource-box, .lab-resource-box { padding: 0; gap: 14px; background-color: transparent; }
+.resource-container, .lab-resource-container { min-height: 170px; padding: 18px; border: 1px solid var(--border-strong); box-shadow: none; }
+.resource-container h3, .lab-resource-container h3 { margin: 0 0 14px; color: var(--text); }
+.resource-box a, .lab-resource-box a { margin: 0 0 8px; padding: 9px 12px; background-color: #087fca; border-radius: 7px; }
+.resource-box a:last-child, .lab-resource-box a:last-child { margin-bottom: 0; }
+.resource-box a:hover, .lab-resource-box a:hover { background-color: #0879bd; transform: translateY(-1px); }
+
+@media (max-width: 650px) { .resource-full-box, .lab-resource-full-box { padding: 12px; } .resource-box, .lab-resource-box { grid-template-columns: 1fr; } }

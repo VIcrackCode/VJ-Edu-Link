@@ -1,0 +1,34 @@
+.timetable-box{
+    min-height: 100%;
+    background-color: white;
+    padding: 12px;
+    border: 1px solid #d7efff;
+    border-radius: 8px;
+}
+.timetable-section ,.timetable-updates-section{
+    background-color: whitesmoke;
+    border: 1px solid rgb(165, 233, 255);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.timetable{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.timetable-box {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 14px;
+}
+
+.timetable-section, .timetable-updates-section { margin: 0; padding: 16px; border-color: var(--border-strong); height:100%; } 
+.timetable-section h3, .timetable-updates-section h3 { margin: 0 0 14px; color: var(--text); }
+.timetable { display: block; height: auto; border: 1px solid var(--border-strong); border-radius: 7px;}
+.timetable-update-card { padding: 13px; margin-top: 10px; background-color: var(--surface); border: 1px solid var(--border); border-radius: 8px; }
+.timetable-update-card p { margin: 0 0 7px; color: var(--text-muted); }
+.timetable-update-card p:last-child { margin-bottom: 0; }

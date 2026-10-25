@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: light;
+  --page-bg: #f0f9ff;
+  --surface: #ffffff;
+  --surface-muted: whitesmoke;
+  --border: #d7efff;
+  --border-strong: rgb(165, 233, 255);
+  --primary: #0879bd;
+  --text: #1e3a5f;
+  --text-muted: #516a82;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, Roboto, sans-serif;
+  min-height: 100dvh;
+  background-color: var(--page-bg);
+  background-image: url("./assets/images/wallpaper.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: var(--primary);
+}
+
+.btn,
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  padding: 9px 14px;
+  border: none;
+  border-radius: 7px;
+  background-color: #087fca;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: #0879bd;
+}
+
+.suggested-by {
+  margin-top: 8px;
+}

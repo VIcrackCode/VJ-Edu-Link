@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.log
+.DS_Store
+Thumbs.db
+.vite/
+
+# Local credentials and generated OAuth tokens
+**/config/*credentials*.json
+**/config/*service-account*.json
+**/tokens/

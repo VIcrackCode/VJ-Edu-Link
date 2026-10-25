@@ -1,0 +1,21 @@
+{
+  "name": "vj-edu-link",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0 <25.0.0"
+  },
+  "scripts": {
+    "client": "npm run dev --prefix client",
+    "server": "npm run dev --prefix server",
+    "seed": "npm run seed --prefix server",
+    "admin:create": "npm run admin:create --prefix server",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"cyan,magenta\" \"npm run server\" \"npm run client\"",
+    "setup": "npm install && npm install --prefix client && npm install --prefix server && npm run seed",
+    "build": "npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.4"
+  }
+}
